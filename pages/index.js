@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import PageLayout from "../layout/PageLayout";
 import SectionTitle from "../components/SectionTitle";
-import Divider from "../components/Divider";
+import ExternalLink from "../components/ExternalLink";
 
 const skills = [
   {
@@ -12,7 +11,27 @@ const skills = [
   },
   {
     id: 2,
-    name: "Python (Django, Flask)",
+    name: "Python (Django, Flask).",
+  },
+  {
+    id: 3,
+    name: "SQL (Postgres) and NoSQL (MongoDB).",
+  },
+  {
+    id: 4,
+    name: "Cloud Native principles.",
+  },
+];
+
+const projects = [
+  {
+    id: 1,
+    name: "Pumpkin CN",
+    description:
+      "Pumpkin CN is a step-by-step and practical hands-on guide to the Cloud Native ecosystem. In this guideline, you learn how to construct a CI/CD pipeline that will containerize an application and deploy it to a Kubernetes cluster.",
+    dateCreated: "17th July 2021",
+    repositoryURL: "https://github.com/mwinel/pumpkin",
+    projectURL: "https://pumpkin.vercel.app/",
   },
 ];
 
@@ -46,18 +65,45 @@ const Home = () => {
         </div>
 
         {/* Tech stack */}
-        <div className="mt-4 lg:mt-10">
+        <div className="mt-8 lg:mt-10">
           <SectionTitle>Skills</SectionTitle>
-          {skills.map((skill) => (
-            <ul class="list-disc list-inside">
-              <li className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                {skill.name}
-              </li>
-            </ul>
-          ))}
+          <div className="my-4">
+            {skills.map((skill) => (
+              <ul className="list-disc list-inside" key={skill.id}>
+                <li className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
+                  {skill.name}
+                </li>
+              </ul>
+            ))}
+          </div>
         </div>
 
         {/* Projects */}
+        <div className="mt-4 lg:mt-10">
+          <SectionTitle>Projects</SectionTitle>
+          <ul className="divide-y divide-gray-200">
+            {projects.map((project) => (
+              <li key={project.id} className="py-4 flex">
+                <div className="">
+                  <p className="text-base font-medium lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
+                    1. {project.name}
+                  </p>
+                  <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
+                    {project.description}
+                  </p>
+                  <p className="flex space-x-4 mt-3">
+                    <ExternalLink href={project.projectURL}>
+                      See Project
+                    </ExternalLink>
+                    <ExternalLink href={project.repositoryURL}>
+                      GitHub
+                    </ExternalLink>
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </PageLayout>
     </>
   );
