@@ -127,7 +127,7 @@ const PageLayout = ({ children }) => {
 
       {/* Footer */}
       <Container>
-        <footer>
+        <footer className="mt-10">
           <Divider />
           <div className="flex space-x-4">
             <ExternalLink href="https://github.com/mwinel">GitHub</ExternalLink>
