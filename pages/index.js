@@ -108,7 +108,6 @@ const Home = () => {
 
         {/* Newsletter Subscription */}
         <div className="mt-4 lg:mt-10">
-          {/* <SectionTitle>Projects</SectionTitle> */}
           <Subscribe />
         </div>
       </PageLayout>
