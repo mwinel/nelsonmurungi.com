@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Container from "../components/Container";
+import ExternalLink from "../components/ExternalLink";
 
 const PageLayout = ({ children }) => {
   const [mounted, setMounted] = useState(false);
@@ -122,9 +123,21 @@ const PageLayout = ({ children }) => {
       <Container>
         <main>{children}</main>
       </Container>
+
       {/* Footer */}
       <Container>
-        <footer>footer</footer>
+        <footer>
+          <hr className="w-full border-2 border-gray-200 dark:border-gray-800 my-4" />
+          <div className="flex space-x-4">
+            <ExternalLink href="https://github.com/mwinel">GitHub</ExternalLink>
+            <ExternalLink href="https://www.linkedin.com/in/nelson-mwirumubi/">
+              LinkdeIn
+            </ExternalLink>
+            <ExternalLink href="https://twitter.com/mwinel">
+              Twitter
+            </ExternalLink>
+          </div>
+        </footer>
       </Container>
     </div>
   );
