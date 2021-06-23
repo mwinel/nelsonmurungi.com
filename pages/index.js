@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import PageLayout from "../layout/PageLayout";
 import SectionTitle from "../components/SectionTitle";
+import SkillsList from "../components/SkillsList";
 import ProjectsList from "../components/ProjectsList";
 import Subscribe from "../components/Subscribe";
 import { skills } from "../data/skills";
@@ -39,15 +40,7 @@ const Home = () => {
         {/* Tech stack */}
         <div className="mt-8 lg:mt-10">
           <SectionTitle>Skills</SectionTitle>
-          <div className="my-4">
-            {skills.slice(0, 4).map((skill) => (
-              <ul className="list-disc list-inside" key={skill.id}>
-                <li className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                  {skill.name}
-                </li>
-              </ul>
-            ))}
-          </div>
+          <SkillsList skills={skills} start={0} end={4} />
         </div>
 
         {/* Projects */}

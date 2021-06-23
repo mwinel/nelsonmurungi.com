@@ -2,6 +2,7 @@ import Head from "next/head";
 import PageLayout from "../layout/PageLayout";
 import SectionTitle from "../components/SectionTitle";
 import ExternalLink from "../components/ExternalLink";
+import SkillsList from "../components/SkillsList";
 import ExperienceTimeline from "../components/ExperienceTimeline";
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
@@ -40,15 +41,7 @@ const Resume = () => {
         {/* Tech stack */}
         <div className="mt-8 lg:mt-10">
           <SectionTitle>Skills/Tech-stack</SectionTitle>
-          <div className="my-4">
-            {skills.map((skill) => (
-              <ul className="list-disc list-inside" key={skill.id}>
-                <li className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                  {skill.name}
-                </li>
-              </ul>
-            ))}
-          </div>
+          <SkillsList skills={skills} start={0} end={20} />
         </div>
 
         {/* Experience */}
