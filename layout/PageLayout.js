@@ -5,6 +5,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Container from "../components/Container";
 import ExternalLink from "../components/ExternalLink";
+import Divider from "../components/Divider";
 
 const PageLayout = ({ children }) => {
   const [mounted, setMounted] = useState(false);
@@ -127,7 +128,7 @@ const PageLayout = ({ children }) => {
       {/* Footer */}
       <Container>
         <footer>
-          <hr className="w-full border-2 border-gray-200 dark:border-gray-800 my-4" />
+          <Divider />
           <div className="flex space-x-4">
             <ExternalLink href="https://github.com/mwinel">GitHub</ExternalLink>
             <ExternalLink href="https://www.linkedin.com/in/nelson-mwirumubi/">
