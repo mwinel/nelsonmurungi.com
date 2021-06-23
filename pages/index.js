@@ -1,7 +1,7 @@
 import Head from "next/head";
 import PageLayout from "../layout/PageLayout";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -11,4 +11,6 @@ export default function Home() {
       <PageLayout>main content</PageLayout>
     </>
   );
-}
+};
+
+export default Home;
