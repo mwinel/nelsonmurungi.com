@@ -4,9 +4,11 @@ import SectionTitle from "../components/SectionTitle";
 import ExternalLink from "../components/ExternalLink";
 import SkillsList from "../components/SkillsList";
 import ExperienceTimeline from "../components/ExperienceTimeline";
+import EducationTimeline from "../components/EducationTimeline";
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
 import { experience } from "../data/experience";
+import { education } from "../data/education";
 
 const Resume = () => {
   return (
@@ -51,7 +53,13 @@ const Resume = () => {
         </div>
 
         {/* Education */}
+        <div className="mt-8 lg:mt-10">
+          <SectionTitle>Education</SectionTitle>
+          <EducationTimeline education={education} />
+        </div>
+
         {/* Licences & Certifications */}
+
         {/* Projects */}
         <div className="mt-4 lg:mt-10">
           <SectionTitle>Projects</SectionTitle>

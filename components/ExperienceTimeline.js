@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import { ChatAltIcon } from "@heroicons/react/solid";
 import ExternalLink from "./ExternalLink";
 
 const ExperienceTimeline = ({ experience }) => {
