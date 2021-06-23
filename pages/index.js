@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import PageLayout from "../layout/PageLayout";
 import SectionTitle from "../components/SectionTitle";
-import ExternalLink from "../components/ExternalLink";
+import ProjectsList from "../components/ProjectsList";
 import Subscribe from "../components/Subscribe";
 import { skills } from "../data/skills";
 import { projects } from "../data/projects";
@@ -51,31 +51,7 @@ const Home = () => {
         </div>
 
         {/* Projects */}
-        <div className="mt-4 lg:mt-10">
-          <SectionTitle>Projects</SectionTitle>
-          <ul className="divide-y divide-gray-200">
-            {projects.slice(0, 1).map((project) => (
-              <li key={project.id} className="py-4 flex">
-                <div className="">
-                  <p className="text-base font-medium lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                    {project.name}
-                  </p>
-                  <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                    {project.description}
-                  </p>
-                  <p className="flex space-x-4 mt-3">
-                    <ExternalLink href={project.projectURL}>
-                      See Project
-                    </ExternalLink>
-                    <ExternalLink href={project.repositoryURL}>
-                      GitHub
-                    </ExternalLink>
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ProjectsList projects={projects} start={0} end={1} />
 
         {/* Newsletter Subscription */}
         <div className="mt-4 lg:mt-10">

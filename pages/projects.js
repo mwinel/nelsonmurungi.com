@@ -1,5 +1,7 @@
 import Head from "next/head";
 import PageLayout from "../layout/PageLayout";
+import ProjectsList from "../components/ProjectsList";
+import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
@@ -7,7 +9,10 @@ const Projects = () => {
       <Head>
         <title>Nelson Murungi | My Projects.</title>
       </Head>
-      <PageLayout>Projects will go here.</PageLayout>
+      <PageLayout>
+        {/* Projects */}
+        <ProjectsList projects={projects} start={0} end={10} />
+      </PageLayout>
     </>
   );
 };
