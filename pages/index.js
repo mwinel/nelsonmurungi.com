@@ -4,37 +4,8 @@ import PageLayout from "../layout/PageLayout";
 import SectionTitle from "../components/SectionTitle";
 import ExternalLink from "../components/ExternalLink";
 import Subscribe from "../components/Subscribe";
-
-const skills = [
-  {
-    id: 1,
-    name: "JavaScript (NodeJS/ExpressJS, ReactJS, React Native for mobile apps).",
-  },
-  {
-    id: 2,
-    name: "Python (Django, Flask).",
-  },
-  {
-    id: 3,
-    name: "SQL (Postgres) and NoSQL (MongoDB).",
-  },
-  {
-    id: 4,
-    name: "Cloud Native principles.",
-  },
-];
-
-const projects = [
-  {
-    id: 1,
-    name: "Pumpkin CN",
-    description:
-      "Pumpkin CN is a step-by-step and practical hands-on guide to the Cloud Native ecosystem. In this guideline, you learn how to construct a CI/CD pipeline that will containerize an application and deploy it to a Kubernetes cluster.",
-    dateCreated: "17th July 2021",
-    repositoryURL: "https://github.com/mwinel/pumpkin",
-    projectURL: "https://pumpkin.vercel.app/",
-  },
-];
+import { skills } from "../data/skills";
+import { projects } from "../data/projects";
 
 const Home = () => {
   return (
@@ -69,7 +40,7 @@ const Home = () => {
         <div className="mt-8 lg:mt-10">
           <SectionTitle>Skills</SectionTitle>
           <div className="my-4">
-            {skills.map((skill) => (
+            {skills.slice(0, 4).map((skill) => (
               <ul className="list-disc list-inside" key={skill.id}>
                 <li className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
                   {skill.name}
