@@ -8,7 +8,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PageLayout>main</PageLayout>
+      <PageLayout>main content</PageLayout>
     </>
   );
 }
