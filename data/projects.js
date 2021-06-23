@@ -8,4 +8,13 @@ export const projects = [
     repositoryURL: "https://github.com/mwinel/pumpkin",
     projectURL: "https://pumpkin.vercel.app/",
   },
+  {
+    id: 2,
+    name: "Personal Website",
+    description:
+      "Personal website that says something about me and blog where I share my thoughts.",
+    dateCreated: "23rd July 2021",
+    repositoryURL: "https://github.com/mwinel/nelsonmurungi.com",
+    projectURL: "https://nelsonmurungi.vercel.app/",
+  },
 ];

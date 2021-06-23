@@ -67,7 +67,7 @@ const Resume = () => {
               <li key={project.id} className="py-4 flex">
                 <div className="">
                   <p className="text-base font-medium lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                    1. {project.name}
+                    {project.name}
                   </p>
                   <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
                     {project.description}

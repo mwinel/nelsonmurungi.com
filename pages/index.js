@@ -54,11 +54,11 @@ const Home = () => {
         <div className="mt-4 lg:mt-10">
           <SectionTitle>Projects</SectionTitle>
           <ul className="divide-y divide-gray-200">
-            {projects.map((project) => (
+            {projects.slice(0, 1).map((project) => (
               <li key={project.id} className="py-4 flex">
                 <div className="">
                   <p className="text-base font-medium lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                    1. {project.name}
+                    {project.name}
                   </p>
                   <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
                     {project.description}
