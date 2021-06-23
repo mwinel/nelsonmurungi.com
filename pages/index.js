@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageLayout from "../layout/PageLayout";
 import SectionTitle from "../components/SectionTitle";
 import ExternalLink from "../components/ExternalLink";
+import Subscribe from "../components/Subscribe";
 
 const skills = [
   {
@@ -103,6 +104,12 @@ const Home = () => {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Newsletter Subscription */}
+        <div className="mt-4 lg:mt-10">
+          {/* <SectionTitle>Projects</SectionTitle> */}
+          <Subscribe />
         </div>
       </PageLayout>
     </>
