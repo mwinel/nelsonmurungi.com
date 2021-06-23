@@ -25,12 +25,7 @@ const ExperienceTimeline = ({ experience }) => {
                         alt="company logo"
                       />
                       {experienceItem.isCurrent ? (
-                        <span className="absolute -bottom-0.5 -right-1 bg-white rounded-tl px-0.5 py-px">
-                          <ChatAltIcon
-                            className="h-5 w-5 text-gray-400"
-                            aria-hidden="true"
-                          />
-                        </span>
+                        <span className="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400" />
                       ) : null}
                     </div>
                     <div className="min-w-0 flex-1 -mt-1 lg:-mt-2">
