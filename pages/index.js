@@ -5,8 +5,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>
+          Nelson Murungi | Full-stack Developer and Cyber Security, AI
+          enthusiast.
+        </title>
       </Head>
       <PageLayout>main content</PageLayout>
     </>

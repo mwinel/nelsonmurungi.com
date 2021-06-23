@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Container from "../components/Container";
@@ -35,24 +36,21 @@ const PageLayout = ({ children }) => {
                     </Disclosure.Button>
                   </div>
                   <div className="hidden md:ml-6 md:flex md:space-x-8 items-center lg:ml-0 lg:space-x-1">
-                    <a
-                      href="/"
-                      className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center"
-                    >
-                      About Me
-                    </a>
-                    <a
-                      href="/"
-                      className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center"
-                    >
-                      Blog
-                    </a>
-                    <a
-                      href="/"
-                      className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center"
-                    >
-                      Projects
-                    </a>
+                    <Link href="/">
+                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                        About Me
+                      </a>
+                    </Link>
+                    <Link href="/blog">
+                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                        Blog
+                      </a>
+                    </Link>
+                    <Link href="/projects">
+                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                        Projects
+                      </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -99,24 +97,21 @@ const PageLayout = ({ children }) => {
 
             <Disclosure.Panel className="md:hidden">
               <div className="pt-2 pb-3 space-y-1">
-                <a
-                  href="/"
-                  className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center"
-                >
-                  About Me
-                </a>
-                <a
-                  href="/"
-                  className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center"
-                >
-                  Blog
-                </a>
-                <a
-                  href="/"
-                  className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center"
-                >
-                  Projects
-                </a>
+                <Link href="/">
+                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                    About Me
+                  </a>
+                </Link>
+                <Link href="/blog">
+                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                    Blog
+                  </a>
+                </Link>
+                <Link href="/projects">
+                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                    Projects
+                  </a>
+                </Link>
               </div>
             </Disclosure.Panel>
           </>
