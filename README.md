@@ -1,6 +1,6 @@
 ## nelsonmurungi.com
 
-My personal website and blog for sharing a few ideas. Feel free to use this as an inspiration for your personal portfolio.
+My personal website and blog for sharing a few ideas. Feel free to use this as an inspiration for your personal portfolio. See [live demo](https://nelsonmurungi.vercel.app/).
 
 ## Getting Started
 
