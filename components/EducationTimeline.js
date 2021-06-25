@@ -1,5 +1,3 @@
-import ExternalLink from "./ExternalLink";
-
 const EducationTimeline = ({ education }) => {
   return (
     <div className="flow-root">
