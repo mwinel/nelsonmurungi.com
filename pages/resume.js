@@ -86,6 +86,16 @@ const Resume = () => {
             ))}
           </ul>
         </div>
+
+        {/* Achievements */}
+
+        {/* Location */}
+        <div className="mt-8 lg:mt-10">
+          <SectionTitle>Location</SectionTitle>
+          <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
+            Kampala, Uganda. Always working remotely.
+          </p>
+        </div>
       </PageLayout>
     </>
   );
