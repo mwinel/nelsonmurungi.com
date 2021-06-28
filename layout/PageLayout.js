@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Container from "../components/Container";
+import Navlink from "../components/Navlink";
 import ExternalLink from "../components/ExternalLink";
 import Divider from "../components/Divider";
 
@@ -38,26 +39,10 @@ const PageLayout = ({ children }) => {
                     </Disclosure.Button>
                   </div>
                   <div className="hidden md:ml-6 md:flex md:space-x-8 items-center lg:ml-0 lg:space-x-1">
-                    <Link href="/">
-                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                        About Me
-                      </a>
-                    </Link>
-                    <Link href="/blog">
-                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                        Blog
-                      </a>
-                    </Link>
-                    <Link href="/projects">
-                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                        Projects
-                      </a>
-                    </Link>
-                    <Link href="/resume">
-                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                        Resume
-                      </a>
-                    </Link>
+                    <Navlink href="/">About Me</Navlink>
+                    <Navlink href="/blog">Blog</Navlink>
+                    <Navlink href="/projects">Projects</Navlink>
+                    <Navlink href="/resume">Resume</Navlink>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -104,26 +89,18 @@ const PageLayout = ({ children }) => {
 
             <Disclosure.Panel className="md:hidden">
               <div className="pt-2 pb-3 space-y-1">
-                <Link href="/">
-                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                    About Me
-                  </a>
-                </Link>
-                <Link href="/blog">
-                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                    Blog
-                  </a>
-                </Link>
-                <Link href="/projects">
-                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                    Projects
-                  </a>
-                </Link>
-                <Link href="/resume">
-                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
-                    Resume
-                  </a>
-                </Link>
+                <Navlink href="/" className="mx-4">
+                  About Me
+                </Navlink>
+                <Navlink href="/blog" className="mx-4">
+                  Blog
+                </Navlink>
+                <Navlink href="/projects" className="mx-4">
+                  Projects
+                </Navlink>
+                <Navlink href="/resume" className="mx-4">
+                  Resume
+                </Navlink>
               </div>
             </Disclosure.Panel>
           </>
