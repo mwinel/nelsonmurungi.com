@@ -88,6 +88,17 @@ const Resume = () => {
         </div>
 
         {/* Achievements */}
+        <div className="mt-8 lg:mt-10">
+          <SectionTitle>Achievements</SectionTitle>
+          <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
+            <span className="font-medium">
+              Winner Uganda Technology Engineers Challenge, 2021
+            </span>{" "}
+            organized by JICA Uganda (Japanese International Cooperation
+            Agency), The Hive Colab and The Ministry ICT & National Guidance,
+            Uganda.
+          </p>
+        </div>
 
         {/* Location */}
         <div className="mt-8 lg:mt-10">
