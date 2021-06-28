@@ -53,6 +53,11 @@ const PageLayout = ({ children }) => {
                         Projects
                       </a>
                     </Link>
+                    <Link href="/resume">
+                      <a className="h-10 py-3 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                        Resume
+                      </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -112,6 +117,11 @@ const PageLayout = ({ children }) => {
                 <Link href="/projects">
                   <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
                     Projects
+                  </a>
+                </Link>
+                <Link href="/resume">
+                  <a className="h-10 py-3 mx-4 px-6 bg-gray-200 font-medium rounded dark:bg-gray-800 focus:outline-none flex items-center">
+                    Resume
                   </a>
                 </Link>
               </div>
