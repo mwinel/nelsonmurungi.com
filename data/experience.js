@@ -76,4 +76,27 @@ export const experience = [
     endDate: "September 2019",
     isCurrent: false,
   },
+  {
+    id: 5,
+    type: "fulltime",
+    company: {
+      name: "",
+      location: "Kampala, Uganda",
+      href: "",
+      logo: "",
+    },
+    jobTitle: "Freelance Web Developer",
+    tags: [
+      { id: 1, name: "Django", href: "https://www.djangoproject.com/" },
+      { id: 2, name: "ReactJS", href: "https://reactjs.org/" },
+      { id: 3, name: "Redux", href: "https://redux.js.org/" },
+      { id: 4, name: "NodeJS", href: "https://nodejs.org/" },
+      { id: 5, name: "HTML", href: "" },
+      { id: 6, name: "CSS", href: "" },
+      { id: 7, name: "JavaScript", href: "" },
+    ],
+    startDate: "April 2017",
+    endDate: "September 2019",
+    isCurrent: false,
+  },
 ];

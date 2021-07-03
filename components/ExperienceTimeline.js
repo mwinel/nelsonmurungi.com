@@ -18,11 +18,16 @@ const ExperienceTimeline = ({ experience }) => {
                 {experienceItem.type === "fulltime" ? (
                   <>
                     <div className="relative mr-2">
-                      <img
-                        className="h-12 w-12 rounded-full border bg-gray-200 flex items-center justify-center ring-1 ring-gray-200"
-                        src={experienceItem.company.logo}
-                        alt="company logo"
-                      />
+                      {experienceItem.company.logo ? (
+                        <img
+                          className="h-12 w-12 rounded-full border bg-gray-200 flex items-center justify-center ring-1 ring-gray-200"
+                          src={experienceItem.company.logo}
+                          alt="company logo"
+                        />
+                      ) : (
+                        <div className="h-12 w-12 rounded-full border bg-gray-200 flex items-center justify-center ring-1 ring-gray-200" />
+                      )}
+
                       {experienceItem.isCurrent ? (
                         <span className="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400" />
                       ) : null}
@@ -30,7 +35,7 @@ const ExperienceTimeline = ({ experience }) => {
                     <div className="min-w-0 flex-1 -mt-1 lg:-mt-2">
                       <div>
                         <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-                          {experienceItem.jobTitle},{" "}
+                          {experienceItem.jobTitle}{" "}
                           <span>
                             <a href={experienceItem.company.href}>
                               {experienceItem.company.name}
