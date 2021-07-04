@@ -96,7 +96,7 @@ export const experience = [
       { id: 7, name: "JavaScript", href: "" },
     ],
     startDate: "April 2017",
-    endDate: "September 2019",
+    endDate: "September 2018",
     isCurrent: false,
   },
 ];
