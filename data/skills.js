@@ -25,6 +25,10 @@ export const skills = [
   },
   {
     id: 7,
+    name: "Argo CD",
+  },
+  {
+    id: 7,
     name: "Version Control",
   },
   {
