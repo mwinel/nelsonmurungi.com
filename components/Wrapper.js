@@ -154,7 +154,7 @@ const PageLayout = ({ children, ...customMeta }) => {
           <div className="flex space-x-4">
             <ExternalLink href="https://github.com/mwinel">GitHub</ExternalLink>
             <ExternalLink href="https://www.linkedin.com/in/nelson-mwirumubi/">
-              LinkdeIn
+              LinkedIn
             </ExternalLink>
             <ExternalLink href="https://twitter.com/mwinel">
               Twitter
