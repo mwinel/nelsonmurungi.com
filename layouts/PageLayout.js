@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import Head from "next/head";
+import { useRouter } from "next/router";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Container from "../components/Container";
@@ -7,16 +9,49 @@ import Navlink from "../components/Navlink";
 import ExternalLink from "../components/ExternalLink";
 import Divider from "../components/Divider";
 
-const PageLayout = ({ children }) => {
+const PageLayout = ({ children, ...customMeta }) => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
+  const router = useRouter();
+
+  const meta = {
+    title:
+      "Nelson Murungi Mwirumubi - Fullstack Developer, Cyber Security, AI enthusiast.",
+    description: "Fullstack Developer, Cyber Security, AI enthusiast.",
+    type: "website",
+    ...customMeta,
+  };
+
   return (
     <div>
-      {/* Header */}
-      {/* Navbar */}
+      <Head>
+        <title>{meta.title}</title>
+        <meta name="robots" content="follow, index" />
+        <meta content={meta.description} name="description" />
+        <meta
+          property="og:url"
+          content={`https://nelsonmurungi.vercel.app${router.asPath}`}
+        />
+        <link
+          rel="canonical"
+          href={`https://nelsonmurungi.vercel.app${router.asPath}`}
+        />
+        <meta property="og:type" content={meta.type} />
+        <meta property="og:site_name" content="Nelson Murungi Mwirumubi" />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:image" content={meta.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@mwinel" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        {meta.date && (
+          <meta property="article:published_time" content={meta.date} />
+        )}
+      </Head>
       <Disclosure as="nav" className="my-3">
         {({ open }) => (
           <>
@@ -80,7 +115,6 @@ const PageLayout = ({ children }) => {
                         </svg>
                       )}
                     </button>
-                    {/* </a> */}
                   </div>
                 </div>
               </div>

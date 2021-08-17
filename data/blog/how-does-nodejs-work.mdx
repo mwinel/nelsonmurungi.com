@@ -1,0 +1,67 @@
+---
+title: 'How does NodeJS work?'
+publishedAt: '2021-08-15'
+summary: 'NodeJS is an open-source JavaScript runtime environment and library to run web applications outside the client’s browser. 
+It is used to create server-side web applications.'
+---
+
+[NodeJS](https://nodejs.org/en/) is an open-source JavaScript runtime environment and library to run web applications outside the client’s browser. 
+It is used to create server-side web applications.
+
+NodeJS is single-threaded for **asynchronous processing** and takes advantage of the **event-driven approach**. 
+With **synchronous processing**, tasks are performed one at a time and only when one is completed. 
+In other words, you need to wait for a task to finish to move to the next one. 
+With **asynchronous processing**, on the other hand, you can move to another task before the previous one finishes.
+
+By doing asynchronous processing on a single thread under typical web loads, NodeJS can achieve more performance 
+and scalability compared to the typical thread-based implementation.
+
+An event-driven programming approach uses events to trigger various functions. 
+An event can be anything, such as typing a key or clicking a mouse button.
+
+One of the most common terms you will come across and you can never miss out while working with NodeJS is “callback functions”. 
+In NodeJS a callback function is called after a given task. 
+It allows other code to be run in the meantime and prevents any blocking. All NodeJS APIs, therefore, are written to support callbacks.
+
+**NodeJS is, therefore, suitable for;**
+
+- Real-time and data-driven applications like chats
+- Data-Intensive streaming applications like Netflix 
+- Complex SPAs (Single-Page Applications). These are commonly built with tools such as React and Vue.
+- Internet of Things
+- And works well with the now-famous Microservices architecture
+
+**In summary here are some of the reasons why you should choose NodeJS for your next application.**
+
+- NodeJS generally fast
+- NodeJS is asynchronous 
+- NodeJS rarely blocks
+- NodeJS yields great concurrency
+- Better synchronization of code between server and client due to same code base
+- The Node Package Manager has over 50,000 packages available at the developer’s disposal which make it faster for a 
+developer to deliver a given project since they do not need to write some implementations from scratch
+
+The diagram below illustrates a typical workflow of a web server built with NodeJS
+
+
+<Image
+  alt={`how nodejs works`}
+  src={`/static/images/how-does-nodejs-work.png`}
+  width={1400/2}
+  height={700/2}
+  priority
+/>
+
+
+- A client will send requests to the webserver to interact with the web application. 
+A request can be **non-blocking** (simple operations that do not require external resources, such as querying or updating data from a Postgres database) 
+or **blocking** (complex operations requiring external resources).
+- NodeJS then retrieves the incoming requests and adds them to the **Event Queue**.
+- The requests are then passed one by one through the **Event Loop**. 
+The event loop checks if the requests are simple enough not to require any external resources
+If they are simple enough, the Event Loop processes simple requests such as I/O Polling. 
+Once the task is carried out completely, the response is sent to the Event Loop that sends that response back to the client.
+- On the other hand, if they are complex, a single thread from the **Thread Pool** is assigned to a single complex request. 
+This thread is responsible for completing a particular blocking request by accessing external resources. 
+Once the task is carried out completely, the response is sent to the Event Loop that sends that response back to the client.
+

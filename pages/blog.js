@@ -1,33 +1,44 @@
-import Head from "next/head";
-import PageLayout from "../layout/PageLayout";
+import { useState } from "react";
+import { getAllFilesWithFrontMatter } from "../lib/mdx";
+import Wrapper from "../components/Wrapper";
 import SectionTitle from "../components/SectionTitle";
 import Subscribe from "../components/Subscribe";
+import BlogPost from "../components/BlogPost";
 
-const Blog = () => {
+const Blog = ({ posts, frontMatter }) => {
   return (
-    <>
-      <Head>
-        <title>Nelson Murungi | Articles or call them blogs.</title>
-      </Head>
-      <PageLayout>
-        <div className="mt-4 lg:mt-10">
-          <SectionTitle>Articles</SectionTitle>
-          <div className="my-4">
-            <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-              I am working on some articles, just to share some thoughts and
-              what I have learned so far. Feel free to subscribe to the
-              newsletter to get a notification when I publish one.
+    <Wrapper
+      title="Blog - Nelson Murungi Mwirumubi"
+      description="Simple summary"
+    >
+      <div className="mt-4 lg:mt-10">
+        <div className="mt-4">
+          <SectionTitle>Recent Articles</SectionTitle>
+        </div>
+        <div className="my-4">
+          {!posts.length && (
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              No posts found.
             </p>
-          </div>
+          )}
+          {posts.map((frontMatter) => (
+            <BlogPost key={frontMatter.title} {...frontMatter} />
+          ))}
         </div>
+      </div>
 
-        {/* Newsletter Subscription */}
-        <div className="mt-4 lg:mt-10">
-          <Subscribe />
-        </div>
-      </PageLayout>
-    </>
+      {/* Newsletter Subscription */}
+      <div className="mt-4 lg:mt-10">
+        <Subscribe />
+      </div>
+    </Wrapper>
   );
 };
 
 export default Blog;
+
+export const getStaticProps = async () => {
+  const posts = await getAllFilesWithFrontMatter("blog");
+
+  return { props: { posts } };
+};
