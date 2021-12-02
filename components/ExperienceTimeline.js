@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import BrandLogo from "./BrandLogo";
 import ExternalLink from "./ExternalLink";
 
 const ExperienceTimeline = ({ experience }) => {
@@ -19,22 +20,21 @@ const ExperienceTimeline = ({ experience }) => {
                   <>
                     <div className="relative mr-2">
                       {experienceItem.company.logo ? (
-                        <img
-                          className="h-12 w-12 rounded-full border bg-gray-200 flex items-center justify-center ring-1 ring-gray-200"
+                        <BrandLogo
                           src={experienceItem.company.logo}
-                          alt="company logo"
+                          brandInitials={experienceItem.company.name[0]}
                         />
                       ) : (
-                        <div className="h-12 w-12 rounded-full border bg-gray-200 flex items-center justify-center ring-1 ring-gray-200" />
+                        <div className="flex items-center justify-center w-12 h-12 bg-gray-200 border rounded-full ring-1 ring-gray-200" />
                       )}
 
                       {experienceItem.isCurrent ? (
-                        <span className="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400" />
+                        <span className="absolute bottom-0 right-0 block w-3 h-3 bg-green-400 rounded-full ring-2 ring-white" />
                       ) : null}
                     </div>
-                    <div className="min-w-0 flex-1 -mt-1 lg:-mt-2">
+                    <div className="flex-1 min-w-0 -mt-1 lg:-mt-2">
                       <div>
-                        <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
+                        <p className="text-base text-gray-800 lg:text-lg dark:text-gray-100 lg:leading-9">
                           {experienceItem.jobTitle}{" "}
                           <span>
                             <a href={experienceItem.company.href}>

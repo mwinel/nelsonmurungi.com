@@ -1,3 +1,5 @@
+import BrandLogo from "./BrandLogo";
+
 const EducationTimeline = ({ education }) => {
   return (
     <div className="flow-root">
@@ -15,18 +17,14 @@ const EducationTimeline = ({ education }) => {
                 {educationItem.type === "present" ? (
                   <>
                     <div className="relative mr-2">
-                      <img
-                        className="h-12 w-12 rounded-full border bg-gray-200 flex items-center justify-center ring-1 ring-gray-200"
-                        src={educationItem.schoolLogo}
-                        alt="school logo"
-                      />
+                      <BrandLogo src={educationItem.schoolLogo} brandInitials={educationItem.school[0]} />
                       {educationItem.isCurrent ? (
-                        <span className="absolute bottom-0 right-0 block h-3 w-3 rounded-full ring-2 ring-white bg-green-400" />
+                        <span className="absolute bottom-0 right-0 block w-3 h-3 bg-green-400 rounded-full ring-2 ring-white" />
                       ) : null}
                     </div>
-                    <div className="min-w-0 flex-1 -mt-1 lg:-mt-2">
+                    <div className="flex-1 min-w-0 -mt-1 lg:-mt-2">
                       <div>
-                        <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
+                        <p className="text-base text-gray-800 lg:text-lg dark:text-gray-100 lg:leading-9">
                           {educationItem.title},{" "}
                           <span>{educationItem.school}</span>
                         </p>
