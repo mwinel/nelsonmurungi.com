@@ -1,12 +1,30 @@
 export const experience = [
   {
+    id: 6,
+    type: "fulltime",
+    company: {
+      name: "Eftax Co. Ltd",
+      location: "Tokyo, Japan",
+      href: "https://eftax.co.jp/en/",
+      logo: "/img/eftax-logo.jpg",
+    },
+    jobTitle: "Frontend Developer",
+    tags: [
+      { id: 1, name: "NextJS", href: "https://nextjs.org/" },
+      { id: 3, name: "Context API", href: "https://reactjs.org/" },
+    ],
+    startDate: "September 2021",
+    endDate: "November 2021",
+    isCurrent: false,
+  },
+  {
     id: 1,
     type: "fulltime",
     company: {
       name: "Fairventures Worldwide FVW gGmbH",
       location: "Stuttgart, Germany",
       href: "https://fairventures.org/",
-      logo: "https://media-exp3.licdn.com/dms/image/C4E0BAQEKPyTy5bIXxg/company-logo_200_200/0/1551794146719?e=1632355200&v=beta&t=sfG4A8QJRWi4wcitgZDTt5q6uyTOf-XGZ90wNkqMBxM",
+      logo: "/img/fairventures-logo.jpg",
     },
     jobTitle: "Fullstack Developer",
     tags: [
@@ -16,8 +34,8 @@ export const experience = [
       { id: 4, name: "Redux", href: "https://redux.js.org/" },
     ],
     startDate: "February 2021",
-    endDate: "Present",
-    isCurrent: true,
+    endDate: "July 2021",
+    isCurrent: false,
   },
   {
     id: 2,
@@ -26,7 +44,7 @@ export const experience = [
       name: "BPOSeats",
       location: "Cebu, Phillipines",
       href: "https://bposeats.com/",
-      logo: "https://media-exp3.licdn.com/dms/image/C510BAQGP05iyhfKklA/company-logo_200_200/0/1563167193167?e=1632355200&v=beta&t=AIWgmB2b8cv_cXHlfBgNhfmjj01cJzT9pDE9HXm4MAo",
+      logo: "public/img/bpo-logo.jpg",
     },
     jobTitle: "Fullstack Developer",
     tags: [
