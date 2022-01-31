@@ -17,7 +17,7 @@ const Resume = () => {
         <SectionTitle>Nelson Murungi Mwirumubi</SectionTitle>
         <div className="my-4">
           <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-            Fullstack Developer, Cyber Security enthuthiast. I satrted this
+            Fullstack Developer, Cyber Security enthuthiast. I started this
             journey as a self taught developer and everything has turned out to
             be amazing.
           </p>
