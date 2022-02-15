@@ -1,5 +1,14 @@
 export const projects = [
   {
+    id: 4,
+    name: "Ezziepos Dashboard",
+    description:
+      "A simple invetory and delivery management dashboard. This is a personal project I am building to be powered by Big Data, AI and ML.",
+    dateCreated: "2nd February 2022",
+    repositoryURL: "https://github.com/mwinel/ezziepos.com",
+    projectURL: "https://ezziepos.vercel.app/",
+  },
+  {
     id: 3,
     name: "Frontend Mentor TODO app challenge",
     description:
