@@ -1,5 +1,14 @@
 export const projects = [
   {
+    id: 3,
+    name: "Frontend Mentor TODO app challenge",
+    description:
+      "A simple Drag and Drop TODO app built with NextJS and Tailwind CSS. For more details about the challenge use this link https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub/nextjs-tailwindcss--mL6MjuC2",
+    dateCreated: "2nd February 2022",
+    repositoryURL: "https://github.com/mwinel/frontend-mentor-todo-app-challenge",
+    projectURL: "https://frontend-mentor-todo-app-challenge-nine.vercel.app/",
+  },
+  {
     id: 1,
     name: "Pumpkin CN",
     description:
