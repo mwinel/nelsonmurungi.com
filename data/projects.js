@@ -1,5 +1,13 @@
 export const projects = [
   {
+    id: 5,
+    name: "Nasa Image Search",
+    description: "A simple image search app that uses the NASA API to search for images.",
+    dateCreated: "5th November 2022",
+    repositoryURL: "https://github.com/mwinel/nasa-image-search",
+    projectURL: "https://nasa-image-search-three.vercel.app",
+  },
+  {
     id: 4,
     name: "Ezziepos Dashboard",
     description:
