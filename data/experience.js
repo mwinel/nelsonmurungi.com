@@ -1,5 +1,25 @@
 export const experience = [
   {
+    id: 7,
+    type: "parttime",
+    company: {
+      name: "Airscape Technology Pty, Ltd",
+      location: "Sydney, Australia",
+      href: "https://airscape.app",
+      logo: "",
+    },
+    jobTitle: "Software Developer",
+    tags: [
+      { id: 1, name: "Flask", href: "https://nextjs.org/" },
+      { id: 2, name: "Kubernetes", href: "https://kubernetes.io" },
+      { id: 3, name: "Docker", href: "https://www.docker.com" },
+      { id: 2, name: "Helm", href: "https://helm.sh" },
+    ],
+    startDate: "March 2021",
+    endDate: "",
+    isCurrent: true,
+  },
+  {
     id: 6,
     type: "fulltime",
     company: {
