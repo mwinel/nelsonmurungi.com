@@ -45,7 +45,8 @@ const ExperienceTimeline = ({ experience }) => {
 
                         <p className="mt-0.5 text-sm text-gray-500 dark:text-gray-300">
                           {experienceItem.company.location} -{" "}
-                          {experienceItem.startDate} - {experienceItem.endDate}
+                          {experienceItem.startDate} -{" "}
+                          <>{experienceItem.isCurrent ? "Present" : experienceItem.endDate}</>
                         </p>
                         {/* Tags */}
                         <div className="my-3">

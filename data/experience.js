@@ -1,12 +1,12 @@
 export const experience = [
   {
     id: 7,
-    type: "parttime",
+    type: "fulltime",
     company: {
       name: "Airscape Technology Pty, Ltd",
       location: "Sydney, Australia",
       href: "https://airscape.app",
-      logo: "",
+      logo: "/img/airscape-logo.jpeg",
     },
     jobTitle: "Software Developer",
     tags: [
@@ -26,7 +26,7 @@ export const experience = [
       name: "Eftax Co. Ltd",
       location: "Tokyo, Japan",
       href: "https://eftax.co.jp/en/",
-      logo: "/img/eftax-logo.jpg",
+      logo: "/img/eftax-logo.jpeg",
     },
     jobTitle: "Frontend Developer",
     tags: [
@@ -64,7 +64,7 @@ export const experience = [
       name: "BPOSeats",
       location: "Cebu, Phillipines",
       href: "https://bposeats.com/",
-      logo: "public/img/bpo-logo.jpg",
+      logo: "/img/bpo-logo.jpg",
     },
     jobTitle: "Fullstack Developer",
     tags: [
@@ -82,9 +82,9 @@ export const experience = [
       name: "CTI Africa",
       location: "Kampala, Uganda",
       href: "https://ctiafrica.com/",
-      logo: "https://media-exp3.licdn.com/dms/image/C560BAQGD2mrgzFl2GA/company-logo_200_200/0/1527595018752?e=1632355200&v=beta&t=PvsnyUKBA10msyXcvgKWnR8wMzbr3OfOnVKq9uv8NnA",
+      logo: "/img/cti-logo.jpeg",
     },
-    jobTitle: "Data Scientist/Software Developer",
+    jobTitle: "Software Developer",
     tags: [
       { id: 1, name: "Python", href: "https://www.python.org/" },
       { id: 2, name: "Azure Cloud", href: "https://azure.microsoft.com/" },
@@ -102,7 +102,7 @@ export const experience = [
       name: "Andela Uganda",
       location: "Kampala, Uganda",
       href: "https://andela.com/",
-      logo: "https://media-exp3.licdn.com/dms/image/C4D0BAQG8wUEdi2SVeg/company-logo_200_200/0/1519952128213?e=1632355200&v=beta&t=lW7ENTRmcGy7qTb9TK8i5TsA7uC8WYldQlqBSYIhhzA",
+      logo: "/img/andela-logo.jpg",
     },
     jobTitle: "Software Developer",
     tags: [
