@@ -1,19 +1,19 @@
 export const skills = [
   {
     id: 1,
-    name: "JavaScript (NodeJS/ExpressJS, ReactJS, React Native for mobile apps, NextJS).",
+    name: "JavaScript (NodeJS/ExpressJS, ReactJS, React Native)",
   },
   {
     id: 2,
-    name: "Python (Django, Flask).",
+    name: "Python (Django, Flask)",
   },
   {
     id: 3,
-    name: "SQL (Postgres) and NoSQL (MongoDB).",
+    name: "SQL (Postgres) and NoSQL (MongoDB)",
   },
   {
     id: 4,
-    name: "HTML and CSS",
+    name: "HTML and CSS (Bootstrap, TailwindCSS)",
   },
   {
     id: 5,
@@ -28,11 +28,15 @@ export const skills = [
     name: "Argo CD",
   },
   {
-    id: 7,
-    name: "Version Control",
+    id: 8,
+    name: "Helm",
   },
   {
-    id: 8,
+    id: 9,
     name: "CI/CD",
+  },
+  {
+    id: 10,
+    name: "Google Cloud Platform",
   },
 ];
