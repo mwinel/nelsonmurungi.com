@@ -1,0 +1,65 @@
+---
+title: 'How to downgrade your Python Version on Apple Silicon Chip MacBook Pro'
+publishedAt: '2022-11-18'
+summary: 'When you install XCode on your MacBook Pro, by default it will install the latest version of Python. This guide takes you through the process of downgrading to a lower python version. The same steps can be used if you want to work with another version of Python.'
+---
+
+First: You will need to install [pyenv](https://github.com/pyenv/pyenv) with homebrew on your MacBook Pro. Pyenv lets you easily switch between multiple versions of [Python](https://www.python.org).
+
+```
+brew update
+brew install pyenv
+```
+
+OR: Clone the repository to get the latest version of pyenv.
+
+```
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+```
+
+Next: You will have to define your enviroment variables to set path changes.
+
+```
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+After setting your enviroment variables, restart your shell so the path changes take effect.
+
+```
+exec "$SHELL"
+```
+
+Verify the pyenv installation and check the available python versions. This will show you a list of different python versions available for installation.
+
+```
+pyenv install --list
+```
+
+Install your desired python version.
+
+```
+pyenv install 3.8
+```
+
+Set your desired python version as your global version after installation.
+
+```
+pyenv global 3.8
+```
+
+Lastly: Verify your current python version your system is currently running.
+
+```
+python3 --version
+```
+
+You should see search a response in your terminal highlighting the python version your system is currently running on.
+
+```
+Python 3.8.0
+```
+
+Hope this was helpful 🤝 .
