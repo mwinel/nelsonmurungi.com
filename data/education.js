@@ -5,7 +5,7 @@ export const education = [
     title: "BSc Computer Science",
     school: "University of London",
     schoolLogo:
-      "https://www.london.ac.uk/sites/default/files/University-of-london-logo_1.png",
+      "",
     startDate: "2022",
     endDate: "present",
     isCurrent: true,
