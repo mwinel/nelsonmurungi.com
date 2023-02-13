@@ -1,14 +1,25 @@
 export const education = [
   {
-    id: 3,
+    id: 4,
     type: "present",
+    title: "BSc Computer Science",
+    school: "University of London",
+    schoolLogo:
+      "https://www.london.ac.uk/sites/default/files/University-of-london-logo_1.png",
+    startDate: "2022",
+    endDate: "present",
+    isCurrent: true,
+  },
+  {
+    id: 3,
+    type: "2023",
     title: "Professional Diploma in UX Design",
     school: "UX Design Institute, Ireland",
     schoolLogo:
       "/img/uxdi-logo.jpeg",
     startDate: "2022",
     endDate: "2023",
-    isCurrent: true,
+    isCurrent: false,
   },
   {
     id: 2,
