@@ -12,7 +12,7 @@ export const education = [
   },
   {
     id: 3,
-    type: "2023",
+    type: "present",
     title: "Professional Diploma in UX Design",
     school: "UX Design Institute, Ireland",
     schoolLogo:
