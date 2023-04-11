@@ -7,6 +7,9 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        "jetbrains-mono": ["JetBrains Mono", "monospace"],
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
