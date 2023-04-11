@@ -17,9 +17,7 @@ const Resume = () => {
         <SectionTitle>Nelson Murungi Mwirumubi</SectionTitle>
         <div className="my-4">
           <p className="text-base lg:text-lg text-gray-800 dark:text-gray-100 lg:leading-9">
-            Fullstack Developer. I started this
-            journey as a self taught developer and everything has turned out to
-            be amazing.
+            Over the past four years, I have gained valuable experience in software development, with a focus on writing and shipping high-quality code using Python and JavaScript. My expertise includes deploying code to cloud platforms such as Google Cloud Platform, using tools like Docker and Kubernetes to manage and scale applications.</br>
           </p>
           <p className="flex space-x-4 mt-3">
             <ExternalLink href="https://github.com/mwinel">GitHub</ExternalLink>
