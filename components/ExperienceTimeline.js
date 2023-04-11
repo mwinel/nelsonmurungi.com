@@ -32,9 +32,9 @@ const ExperienceTimeline = ({ experience }) => {
                         <span className="absolute bottom-0 right-0 block w-3 h-3 bg-green-400 rounded-full ring-2 ring-white" />
                       ) : null}
                     </div>
-                    <div className="flex-1 min-w-0 -mt-1 lg:-mt-2">
+                    <div className="flex-1 min-w-0">
                       <div>
-                        <p className="text-base text-gray-800 lg:text-lg dark:text-gray-100 lg:leading-9">
+                        <p className="text-base text-gray-800 dark:text-gray-100 lg:leading-7">
                           {experienceItem.jobTitle}{" "}
                           <span>
                             <a href={experienceItem.company.href}>

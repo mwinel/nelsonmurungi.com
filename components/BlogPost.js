@@ -2,19 +2,19 @@ import Link from "next/link";
 
 const BlogPost = ({ title, summary, slug, publishedAt }) => {
   return (
-    <Link href={`/blog/${slug}`}>
+    <Link href={`/blog/${slug}`} legacyBehavior>
       <a className="w-full">
-        <div className="mb-4 w-full">
-          <div className="flex flex-col md:flex-row justify-between">
-            <h4 className="text-lg md:text-xl font-medium mb-2 w-full text-blue-500 hover:underline dark:text-gray-100">
+        <div className="w-full mb-4">
+          <div className="flex flex-col justify-between md:flex-row">
+            <h4 className="w-full mb-2 text-lg font-medium text-blue-500 md:text-xl hover:underline dark:text-gray-100">
               {title}
             </h4>
           </div>
-          <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400">
+          <p className="text-base text-gray-600 lg:text-lg dark:text-gray-400">
             {summary}
           </p>
           <div className="flex items-center">
-            <p className="text-sm text-gray-500 my-2">
+            <p className="my-2 text-sm text-gray-500">
               {publishedAt}
             </p>
           </div>

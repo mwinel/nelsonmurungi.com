@@ -13,7 +13,7 @@ const NotFound = () => {
           definetely looking for something I did not think would be important to
           you. Once again I apologise, my bad.
         </p>
-        <Link href="/">
+        <Link href="/" legacyBehavior>
           <a className="p-3 w-64 font-medium mx-auto bg-gray-200 dark:bg-gray-900 text-center rounded-md text-gray-800 dark:text-gray-100">
             Return Home
           </a>
