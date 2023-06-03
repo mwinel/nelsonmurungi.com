@@ -11,7 +11,7 @@ const ProjectsList = ({ projects, start, end }) => {
           {projects.slice(start, end).map((project) => (
             <li key={project.id} className="flex py-4">
               <div className="">
-                <p className="text-base font-medium text-blue-500 hover:underline dark:text-gray-100 lg:leading-7">
+                <p className="text-base font-medium text-blue-600 hover:underline dark:text-gray-100 lg:leading-7">
                   {project.name}
                 </p>
                 <p className="text-base text-gray-800 dark:text-gray-100 lg:leading-7">

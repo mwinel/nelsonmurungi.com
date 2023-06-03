@@ -22,7 +22,7 @@ const BlogLayout = ({ children, frontMatter }) => {
               {frontMatter.readingTime.text}
             </p>
           </div>
-          <div className="prose text-base lg:text-lg text-gray-800 dark:prose-dark max-w-none w-full mt-8">
+          <div className="prose text-base leading-7 text-gray-800 dark:prose-dark max-w-none w-full mt-8">
             {children}
           </div>
         </article>

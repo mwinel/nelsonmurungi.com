@@ -14,7 +14,7 @@ const Home = () => {
         <div className="flex-1 min-w-0">
           <SectionTitle>I’m Nelson Murungi 👋</SectionTitle>
           <h2 className="mt-4 text-base prose text-gray-800 lg:text-lg sm:pr-0 lg:pr-10 dark:text-gray-100">
-            A Fullstack Developer. This website is my zone that helps me lessen
+            A Fullstack Developer with over 4 yrs of expereince. This website is my zone that helps me lessen
             social anxiety and emotional distress by sharing some thoughts on
             the few things I have learned and created in the tech world.
           </h2>
@@ -27,15 +27,6 @@ const Home = () => {
           </h2>
         </div>
       </div>
-
-      {/* Tech stack */}
-      <div className="mt-8 lg:mt-10">
-        <SectionTitle>Skills</SectionTitle>
-        <SkillsList skills={skills} start={0} end={4} />
-      </div>
-
-      {/* Projects */}
-      <ProjectsList projects={projects} start={0} end={1} />
 
       {/* Newsletter Subscription */}
       <div className="mt-4 lg:mt-10">

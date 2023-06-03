@@ -21,7 +21,7 @@ const Blog = ({ posts, frontMatter }) => {
               No posts found.
             </p>
           )}
-          {posts.map((frontMatter) => (
+          {posts.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)).map((frontMatter) => (
             <BlogPost key={frontMatter.title} {...frontMatter} />
           ))}
         </div>

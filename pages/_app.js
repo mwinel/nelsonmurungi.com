@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <ThemeProvider attribute="class">
-      <main className="font-jetbrains-mono">
+      <main className="text-base">
       <Component {...pageProps} />
       </main>
     </ThemeProvider>
