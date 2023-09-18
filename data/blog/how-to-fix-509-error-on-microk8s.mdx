@@ -1,0 +1,64 @@
+---
+title: 'How to Fix "x509: certificate has expired or is not yet valid" Error in MicroK8s'
+publishedAt: "2023-09-18"
+summary: "This error typically occurs when the certificates used by MicroK8s have either expired or are not yet valid."
+---
+
+If you're using MicroK8s for your Kubernetes development and you encounter the "x509: certificate has expired or is not yet valid" error, don't worry; it's a common issue, and we have a straightforward solution for you.
+
+This error typically occurs when the certificates used by MicroK8s have either expired or are not yet valid. Here's how you can resolve it:
+
+### Step 1: Check Certificate Expiration
+
+First, let's check the expiration time of all installed certificates by running the following command:
+
+```
+sudo microk8s.refresh-certs -c
+```
+
+This command will display the expiration times of certificates. Similar to the response below;
+
+```
+The CA certificate will expire in 3274 days.
+The server certificate will expire in 0 days.
+The front proxy client certificate will expire in -11 days.
+```
+
+### Step 2: Refresh Server Certificate
+
+If you notice that the server certificate **(server.crt)** has expired or is near expiration, you can refresh it using the `--cert` flag followed by the desired certificate option:
+
+```
+sudo microk8s.refresh-certs --cert server.crt
+```
+
+This will generate a new server certificate with updated expiration dates.
+
+Similarly, if the front proxy client certificate **(front-proxy-client.crt)** is expired or about to expire, you can refresh it with this command:
+
+```
+sudo microk8s.refresh-certs --cert front-proxy-client.crt
+```
+
+### Step 3: Verify the Changes
+
+After running these commands, your MicroK8s cluster should have updated certificates. You can verify the changes by checking the certificate expiration times again:
+
+```
+sudo microk8s.refresh-certs -c
+```
+
+### Step 4: Restart MicroK8s (if needed)
+
+In some cases, you may need to restart MicroK8s to ensure that the new certificates take effect:
+
+```
+sudo microk8s stop
+sudo microk8s start
+```
+
+That's it! You've successfully fixed the "x509: certificate has expired or is not yet valid" error in MicroK8s. Your Kubernetes cluster should now be up and running smoothly.
+
+Remember that regularly checking and refreshing certificates is a good practice to avoid such issues in the future.
+
+Happy Kubernetes development!
