@@ -17,12 +17,12 @@ const Resume = () => {
         <SectionTitle>Nelson Murungi Mwirumubi</SectionTitle>
         <div className="my-4">
           <p className="text-base text-gray-800 dark:text-gray-100 lg:leading-7">
-            Over the past <b>four years</b>, I have gained valuable experience in
-            software development, with a focus on writing and shipping
-            high-quality code using <b>Python</b> and <b>JavaScript</b>. My expertise includes
-            deploying code to cloud platforms such as <b>Google Cloud Platform</b>,
-            using tools like <b>Docker</b> and <b>Kubernetes</b> to manage and scale
-            applications.
+            Over the past <b>four years</b>, I have gained valuable experience
+            in software development, with a focus on writing and shipping
+            high-quality code using <b>Python</b> and <b>JavaScript</b>. My
+            expertise includes deploying code to cloud platforms such as{" "}
+            <b>Google Cloud Platform</b>, using tools like <b>Docker</b> and{" "}
+            <b>Kubernetes</b> to manage and scale applications.
             <br />
             <br />
             In my previous roles, I have worked on a variety of projects,
@@ -38,6 +38,13 @@ const Resume = () => {
             always eager to learn new technologies and have experience working
             with frameworks such as Flask, Django, ExpressJS, React, and React
             Native.
+            <br />
+            <br />
+            I'm passionate about open-source projects and currently contributing
+            as a front-end developer for a distributed learner-focused solution
+            supported by Kyoto University. In this role, I have had the
+            opportunity to design a data visualization tool for learners and
+            schools using Next.js, React Query, and D3.js.
           </p>
           <p className="flex mt-3 space-x-4">
             <ExternalLink href="https://github.com/mwinel">GitHub</ExternalLink>
