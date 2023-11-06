@@ -1,8 +1,26 @@
 export const projects = [
   {
+    id: 7,
+    name: "HQZen",
+    description: "HQZen is a managed Productivity Engine, an entire ecosystem of tools for engaging custom solutions for the individual or scaling teams.",
+    dateCreated: "5th November 2022",
+    repositoryURL: "",
+    projectURL: "https://hqzen.com/",
+  },
+  {
+    id: 6,
+    name: "Treeo",
+    description:
+      "The TREEO app is an easy-to-use digital tool designed to work on simple, affordable and older Android smartphones. It enables smallholder farmers to calculate the value of their trees, plan agroforestry plantations and get best practice recommendations for their trees. The app’s features—which include field and tree monitoring, timber value estimation and coaching materials—can all be used without an internet connection.",
+    dateCreated: "5th November 2022",
+    repositoryURL: "",
+    projectURL: "https://treeo.one/en/treeo-app",
+  },
+  {
     id: 5,
     name: "Nasa Image Search",
-    description: "A simple image search app that uses the NASA API to search for images.",
+    description:
+      "A simple image search app that uses the NASA API to search for images.",
     dateCreated: "5th November 2022",
     repositoryURL: "https://github.com/mwinel/nasa-image-search",
     projectURL: "https://nasa-image-search-three.vercel.app",
@@ -22,7 +40,8 @@ export const projects = [
     description:
       "A simple Drag and Drop TODO app built with NextJS and Tailwind CSS. For more details about the challenge use this link https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub/nextjs-tailwindcss--mL6MjuC2",
     dateCreated: "2nd February 2022",
-    repositoryURL: "https://github.com/mwinel/frontend-mentor-todo-app-challenge",
+    repositoryURL:
+      "https://github.com/mwinel/frontend-mentor-todo-app-challenge",
     projectURL: "https://frontend-mentor-todo-app-challenge-nine.vercel.app/",
   },
   {
