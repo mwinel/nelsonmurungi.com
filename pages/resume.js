@@ -51,9 +51,9 @@ const Resume = () => {
             <ExternalLink href="https://www.linkedin.com/in/nelson-mwirumubi/">
               LinkdeIn
             </ExternalLink>
-            <ExternalLink href="https://twitter.com/mwinel">
+            {/* <ExternalLink href="https://twitter.com/mwinel">
               Twitter
-            </ExternalLink>
+            </ExternalLink> */}
           </p>
         </div>
       </div>
