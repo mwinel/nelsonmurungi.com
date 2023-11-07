@@ -154,9 +154,9 @@ const PageLayout = ({ children, ...customMeta }) => {
             <ExternalLink href="https://www.linkedin.com/in/nelson-mwirumubi/">
               LinkedIn
             </ExternalLink>
-            <ExternalLink href="https://twitter.com/mwinel">
+            {/* <ExternalLink href="https://twitter.com/mwinel">
               Twitter
-            </ExternalLink>
+            </ExternalLink> */}
           </div>
         </footer>
       </Container>
